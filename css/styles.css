@@ -1,3 +1,16 @@
+:root {
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --white: #ffffff;
+  --dairy: #fcfcfc;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -686,7 +699,7 @@ body:has(.backdrop.is-open) {
   align-items: center;
   justify-content: center;
   border-radius: 2px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid var(--navy-blue-modal);
   width: 16px;
   height: 16px;
   fill: transparent;
@@ -700,9 +713,9 @@ body:has(.backdrop.is-open) {
 }
 
 .checkbox:checked + .form-privacy .form-privacy-checkbox {
-  background-color: #404bbf;
+  background-color: var(--ocean);
   border: none;
-  fill: #f4f4fd;
+  fill: var(--cloud);
 }
 
 .form-privacy {

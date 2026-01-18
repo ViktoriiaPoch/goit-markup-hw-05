@@ -583,7 +583,7 @@
       </div>
     </footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-open" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="icon-close" width="8" height="8">
@@ -592,7 +592,7 @@
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-          <div class="modal-form-wrapper field-name">
+          <div class="modal-form-wrapper">
             <label for="user-name" class="form-label">Name</label>
             <div class="input-wrapper">
               <input
@@ -607,7 +607,7 @@
               </svg>
             </div>
           </div>
-          <div class="modal-form-wrapper field-tel">
+          <div class="modal-form-wrapper">
             <label for="user-tel" class="form-label">Phone</label>
             <div class="input-wrapper">
               <input
@@ -622,7 +622,7 @@
               </svg>
             </div>
           </div>
-          <div class="modal-form-wrapper field-email">
+          <div class="modal-form-wrapper">
             <label for="user-email" class="form-label">Email</label>
             <div class="input-wrapper">
               <input
@@ -638,35 +638,33 @@
             </div>
           </div>
           <div class="modal-form-wrapper field-comm">
-            <label for="user-comm" class="form-label">Comment</label>
-            <div class="input-wrapper">
-              <textarea
-                name="user-comm"
-                id="user-comm"
-                class="form-input form-textarea"
-                placeholder="Text input"
-              ></textarea>
-            </div>
+            <label for="user-comment" class="form-label">Comment</label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="form-input form-textarea"
+              placeholder="Text input"
+            ></textarea>
           </div>
-          <div class="modal-form-wrapper modal-form-agreement">
+          <div class="modal-form-wrapper modal-form-privacy">
             <input
               class="checkbox visually-hidden"
               type="checkbox"
-              name="user-agreement"
-              id="user-agreement"
+              name="user-privacy"
+              id="user-privacy"
               value="true"
               checked
               required
             />
-            <label class="form-agreement" for="user-agreement">
-              <span class="form-agreement-checkbox">
-                <svg class="form-agreement-icon" width="10" height="8">
+            <label class="form-privacy" for="user-privacy">
+              <span class="form-privacy-checkbox">
+                <svg class="form-privacy-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
               <a
-                class="form-agreement-link"
+                class="form-privacy-link"
                 href=""
                 download="./assets/privacy-policy.pdf"
               >

@@ -712,7 +712,7 @@ body:has(.backdrop.is-open) {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox:checked + .form-privacy .form-privacy-checkbox {
+.checkbox:checked + .form-privacy > .form-privacy-checkbox {
   background-color: var(--ocean);
   border: none;
   fill: var(--cloud);
